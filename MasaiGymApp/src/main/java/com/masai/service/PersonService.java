@@ -27,7 +27,7 @@ public class PersonService {
 	
 	public void PrintList()
 	{
-		Collections.sort(theList, (a,b) -> (a.getAge()>=b.getAge())?1:1);
+		Collections.sort(theList, (a,b) -> (a.getAge()>=b.getAge())?1:-1);
 		
 		theList.forEach(age->System.out.println(age));
 	}
